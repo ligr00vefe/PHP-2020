@@ -1,0 +1,4 @@
+<script>alert('babo')</script>
+
+<script>문을 문자열로 인식하도록하여
+Cross Site Scripting 공격 무력화
