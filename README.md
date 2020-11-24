@@ -41,3 +41,8 @@
 ```
   print.php - htmlspecialchars() 함수 활용
 ```
+
+### Ch07 보안 파일 경로 보호
+```
+  print.php - basename() 함수 활용
+```
