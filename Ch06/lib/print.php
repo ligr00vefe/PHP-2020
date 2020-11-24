@@ -8,11 +8,11 @@
     
     // htmlspecialchars() 함수
     // 문자열에서 특정한 특수 문자를 HTML 엔티티로 변환
-    // <와 같은 특수문자를 &lt;로 변환하기 때문에 <script>가 실행되지 않음
+    // '<'와 같은 특수문자를 &lt;(엔티티문자열)로 변환하기 때문에 <script>가 실행되지 않음
 
     // strip_tags() 함수
     // 문자열에서 HTML 태그와 PHP 태그 제거하는 함수
-    // <,> 안에서 실행되는 태그들을 삭제한다.
+    // < > 안에서 실행되는 태그들을 삭제한다.
 
     function print_title(){
         if(isset($_GET['id'])) {
@@ -40,10 +40,10 @@
 
     function print_description() {      
         if(isset($_GET['id'])) {
-            $contents = htmlspecialchars(file_get_contents("data/".$_GET['id'])); 
+            $basename = htmlspecialchars(file_get_contents("data/".$_GET['id'])); 
 
             echo 
-            nl2br($contents).'</br>';
+            nl2br($basename).'</br>';
         } else {
             echo "Hello, PHP".'</br>';
         }        
