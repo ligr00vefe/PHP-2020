@@ -44,5 +44,6 @@
 
 ### Ch07 보안 파일 경로 보호
 ```
-  print.php - basename() 함수 활용
+  print.php          - basename() 함수 활용(다른 경로로 접근제한)
+  delete_process.php - basename() 함수 활용(id명 접근 경로제한) 
 ```
